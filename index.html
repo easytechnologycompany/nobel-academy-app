@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>نوبل أكاديمي — تحميل التطبيق</title>
+  <meta name="description" content="حمّل تطبيق نوبل أكاديمي التعليمي على هاتفك الأندرويد." />
+  <link rel="icon" href="logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --olive: #4B5320;
+      --olive-light: #8A9A5B;
+      --beige: #EBE8DD;
+      --ink: #2A2F1B;
+      --muted: #6A6F58;
+      --card: #ffffff;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Tajawal', system-ui, -apple-system, sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(1200px 600px at 50% -10%, rgba(138,154,91,0.35), transparent 60%),
+        linear-gradient(160deg, #f7f8f2 0%, var(--beige) 100%);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px 16px;
+    }
+    .card {
+      width: 100%;
+      max-width: 440px;
+      background: var(--card);
+      border-radius: 28px;
+      box-shadow: 0 20px 60px rgba(75,83,32,0.14);
+      padding: 40px 28px 32px;
+      text-align: center;
+    }
+    .logo {
+      width: 104px; height: 104px;
+      object-fit: contain;
+      margin: 0 auto 18px;
+      display: block;
+    }
+    h1 { font-size: 30px; font-weight: 800; letter-spacing: -0.5px; }
+    .tagline { color: var(--muted); font-size: 16px; margin-top: 6px; font-weight: 500; }
+
+    .download {
+      display: flex; align-items: center; justify-content: center; gap: 12px;
+      width: 100%;
+      margin-top: 28px;
+      padding: 18px 20px;
+      background: var(--olive);
+      color: #fff;
+      font-family: inherit;
+      font-size: 19px; font-weight: 700;
+      border: none; border-radius: 18px;
+      text-decoration: none;
+      box-shadow: 0 10px 24px rgba(75,83,32,0.30);
+      transition: transform .12s ease, box-shadow .12s ease, background .12s ease;
+    }
+    .download:hover { background: #3D4319; transform: translateY(-2px); box-shadow: 0 14px 30px rgba(75,83,32,0.36); }
+    .download:active { transform: translateY(0); }
+    .download svg { width: 26px; height: 26px; flex: none; }
+
+    .version { margin-top: 12px; color: var(--muted); font-size: 14px; }
+
+    .steps {
+      margin-top: 30px;
+      text-align: start;
+      background: #f6f7f0;
+      border: 1px solid #e6e8db;
+      border-radius: 18px;
+      padding: 18px 18px 8px;
+    }
+    .steps h2 { font-size: 15px; color: var(--olive); margin-bottom: 12px; font-weight: 700; }
+    .step { display: flex; align-items: flex-start; gap: 12px; margin-bottom: 14px; }
+    .num {
+      flex: none; width: 28px; height: 28px; border-radius: 50%;
+      background: var(--olive-light); color: #fff;
+      font-size: 14px; font-weight: 700;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .step p { font-size: 15px; color: var(--ink); line-height: 1.5; padding-top: 3px; }
+    .step small { color: var(--muted); }
+
+    footer { margin-top: 26px; color: var(--muted); font-size: 13px; }
+    footer a { color: var(--olive); text-decoration: none; }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <img class="logo" src="logo.png" alt="نوبل أكاديمي" />
+    <h1>نوبل أكاديمي</h1>
+    <p class="tagline">منصة نوبل التعليمية</p>
+
+    <a class="download" href="https://github.com/easytechnologycompany/nobel-academy-app/releases/latest/download/nobel-academy.apk">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <path d="M12 3v10.55l3.3-3.3 1.4 1.4L12 17.4l-4.7-4.75 1.4-1.4 3.3 3.3V3h1zM5 19h14v2H5v-2z"/>
+      </svg>
+      تحميل التطبيق للأندرويد
+    </a>
+    <p class="version">الإصدار 1.0.4 · لهواتف أندرويد</p>
+
+    <section class="steps">
+      <h2>طريقة التثبيت</h2>
+      <div class="step">
+        <span class="num">١</span>
+        <p>اضغط على زر <strong>«تحميل التطبيق»</strong> بالأعلى.</p>
+      </div>
+      <div class="step">
+        <span class="num">٢</span>
+        <p>افتح الملف الذي تم تنزيله (<small>nobel-academy.apk</small>).</p>
+      </div>
+      <div class="step">
+        <span class="num">٣</span>
+        <p>إذا ظهرت رسالة، اسمح بالتثبيت من <strong>مصادر غير معروفة</strong> ثم اضغط <strong>تثبيت</strong>.</p>
+      </div>
+    </section>
+
+    <footer>
+      © نوبل أكاديمي — <span dir="ltr">EASY TECHNOLOGY</span>
+    </footer>
+  </main>
+</body>
+</html>
